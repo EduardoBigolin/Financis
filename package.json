@@ -7,7 +7,8 @@
     "dev:server": "tsx ./src/infra/http/app.ts"
   },
   "prisma": {
-    "schema": "./src/infra/db/prisma/schema.prisma"
+    "schema": "./src/infra/db/prisma/schema.prisma",
+    "seed": "ts-node ./src/infra/db/seeds/seed.ts"
   },
   "keywords": [],
   "author": "",
