@@ -1,6 +1,5 @@
-import express from "express";
-
-const routes = express.Router();
+import { Router } from "express";
+const routes = Router();
 
 routes.get("/", (req, res) => {
   res.status(200).json({
