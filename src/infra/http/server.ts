@@ -14,7 +14,7 @@ class Server {
     this.app.use(express.json());
   }
   routes() {
-    this.app.use(routes);
+    this.app.use("/api/v1",routes);
   }
 }
 export default Server;

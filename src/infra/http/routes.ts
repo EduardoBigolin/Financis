@@ -1,4 +1,5 @@
 import { Router } from "express";
+import { userRoutes } from "../../user/routes";
 const routes = Router();
 
 routes.get("/", (req, res) => {
@@ -6,5 +7,7 @@ routes.get("/", (req, res) => {
     message: "Welcome to API",
   });
 });
+
+routes.use("/user", userRoutes);
 
 export default routes;
